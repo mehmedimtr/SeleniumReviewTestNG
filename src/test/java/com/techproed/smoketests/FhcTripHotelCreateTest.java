@@ -31,9 +31,12 @@ public class FhcTripHotelCreateTest extends TestBase {
         createPage.phoneKutusu.sendKeys("0111111111111");
         Select select = new Select(createPage.idGroupDropDown);
         select.selectByIndex(2);
+
         createPage.saveButonu.click();
+
         //Thread.sleep(3000);
         //Assert.assertTrue(createPage.basariliYazisi.isDisplayed());
+
         WebDriverWait wait = new WebDriverWait(driver , 60);
         //WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bootbox-body")));
         boolean esitMi = wait.until(ExpectedConditions.textToBe( By.className("bootbox-body"),"Hotel was inserted successfully"));
