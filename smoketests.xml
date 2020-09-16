@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite - SmokTests">
+
+    <test name="Test - SmpkTests">
+
+        <packages>
+
+            <package name="com.techproed.smoketests"></package>
+
+        </packages>
+    </test>
+
+</suite>

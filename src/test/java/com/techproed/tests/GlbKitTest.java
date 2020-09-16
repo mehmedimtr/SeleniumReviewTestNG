@@ -9,7 +9,7 @@ import java.sql.Connection;
 
 public class GlbKitTest {
 
-    @Test
+    @Test (groups = "glbtest")
     public void test(){
         Driver.getDriver().get(ConfigurationReader.getProperty("glb_kitchen"));
         GlbKitPage glbKitPage = new GlbKitPage();
@@ -17,6 +17,7 @@ public class GlbKitTest {
         String aciklama = glbKitPage.aciklama.getText();
         String baslik   = glbKitPage.baslik.getText();
         String fiyat    = glbKitPage.fiyat.getText();
+
         System.out.println(baslik);
         System.out.println(aciklama);
         System.out.println(fiyat);
